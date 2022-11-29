@@ -1,0 +1,18 @@
+{
+  "name": "cypress-workflow-act",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cypress run",
+    "act": "act -W .github/workflows/cypress.yml workflow_dispatch",
+    "act2": "act -W .github/workflows/cypress.yml -P ubuntu-latest=catthehacker/ubuntu:full-latest workflow_dispatch",
+    "act3": "act -W .github/workflows/cypress.yml --container-architecture linux/amd64"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^11.2.0"
+  }
+}
